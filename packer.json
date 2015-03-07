@@ -1,0 +1,13 @@
+{
+"builders": [{
+  "type": "docker",
+       "image": "debian:latest",
+       "export_path": "image.tar"
+     }
+    ],
+	"provisioners": [
+    {
+      "type": "shell",
+      "inline": "apt-get install mono-complete"
+    }]
+}
